@@ -1,14 +1,11 @@
 from flask import Flask, render_template
-from dotenv import load_dotenv
-load_dotenv()
+from app.routes.main import main_routes
+from config import basedir
 
-app = Flask(__name__)
-
-
-@app.route('/')
+@main_routes.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/healthcheck')
+@main_routes.route('/healthcheck')
 def health():
     return 'Ok'
