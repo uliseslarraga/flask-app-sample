@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "app"
+version = "1.0.0"
+authors = [
+  { name="Ulises Larraga", email="uliseslarraga@gmail.com" },
+]
+description = "Flask app sample to deploy a High Available Web Server"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
