@@ -10,3 +10,4 @@ pyproject_hooks==1.0.0
 python-dotenv==1.0.1
 waitress==3.0.0
 Werkzeug==3.0.1
+boto3==1.34.79
