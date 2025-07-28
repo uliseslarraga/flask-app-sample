@@ -18,7 +18,7 @@ def s3():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
     s3_resource = boto3.resource("s3")
-    bucket = s3_resource.Bucket("three-tier-storage-app-development")
+    bucket = s3_resource.Bucket("tofu-multi-env-storage-app-development")
 
     listed_files = ObjectWrapper.list(bucket, "Screenshot")
     return f"Their keys are: {', '.join(l.key for l in listed_files)}"
